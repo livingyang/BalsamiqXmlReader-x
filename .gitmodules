@@ -1,0 +1,3 @@
+[submodule "gles20"]
+	path = gles20
+	url = git://github.com/cocos2d/cocos2d-x.git
