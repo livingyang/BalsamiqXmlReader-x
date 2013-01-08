@@ -10,18 +10,24 @@
 #ifndef BalsamiqXmlReader_x_BalsamiqFileParser_cpp
 #define BalsamiqXmlReader_x_BalsamiqFileParser_cpp
 
-#include <string>
-#include <map>
+#include "cocos2d.h"
+#include <libxml/parser.h>
 
-typedef std::map<std::string /*property name*/, std::string /*property value*/> NameValueMap;
-
-class BalsamiqFileParser
+class BalsamiqControlData;
+class BalsamiqBmmlData;
+class BalsamiqFileParser : public cocos2d::CCObject
 {    
 public:
     BalsamiqFileParser();
     virtual ~BalsamiqFileParser();
     
-    bool parseXmlString(const char *xmlString, NameValueMap &outMap);
+    static BalsamiqFileParser *sharedBalsamiqFileParser();
+    
+    BalsamiqBmmlData *parseBmmlFile(std::string bmmlFilePath);
+    
+private:
+    cocos2d::CCArray *parseFileControlInfo(std::string filePath);
+    BalsamiqControlData *parseControlInfo(xmlNodePtr node);
 };
 
 #endif //BalsamiqXmlReader_x_BalsamiqFileParser_cpp

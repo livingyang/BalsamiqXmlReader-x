@@ -11,9 +11,9 @@
 #define BalsamiqReaderWithCocos2dx_BalsamiqFileManager_cpp
 
 #include "cocos2d.h"
-#include <libxml/parser.h>
 
-class BalsamiqControlData;
+std::string getLastPathComponent(std::string filePath);
+
 class BalsamiqFileManager : public cocos2d::CCObject
 {
 public:
@@ -23,7 +23,6 @@ public:
     
     cocos2d::CCArray *getControlDataFromFileName(std::string bmmlFileName);
     
-    cocos2d::CCArray *parseFileControlInfo(std::string filePath);
 private:
     BalsamiqFileManager();
     void loadAllControlInfo(std::string rootDir);
@@ -31,7 +30,6 @@ private:
     typedef std::map<std::string /*fileName*/, std::string /*filePath*/> NameToPathMap;
     void makeBmmlFileList(std::string dir, NameToPathMap &nameToPathMap);
     void printNameToPathMap(NameToPathMap &nameToPathMap) const;
-    BalsamiqControlData *parseControlInfo(xmlNodePtr node);
     
 private:
     typedef cocos2d::CCDictionary FileNameAndControlDic;

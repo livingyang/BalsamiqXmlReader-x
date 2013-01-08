@@ -12,6 +12,8 @@
 		1A1CF36A1626CEFF00AFC938 /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = 1A1CF3681626CEFF00AFC938 /* ipadhd */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		273D008B1697C47A0049FC48 /* BalsamiqBmmlData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 273D00891697C4790049FC48 /* BalsamiqBmmlData.cpp */; };
+		273D00BC16990FB50049FC48 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 273D00BB16990FB50049FC48 /* libcurl.a */; };
 		273DFF881696B9920049FC48 /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 273DFF871696B8A10049FC48 /* libcocos2dx.a */; };
 		273DFF931696BC930049FC48 /* BalsamiqFileParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 273DFF911696BC930049FC48 /* BalsamiqFileParser.cpp */; };
 		273DFFA01696BE4C0049FC48 /* BalsamiqControlData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 273DFF981696BE4B0049FC48 /* BalsamiqControlData.cpp */; };
@@ -19,6 +21,7 @@
 		273DFFA21696BE4C0049FC48 /* BalsamiqFileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 273DFF9C1696BE4B0049FC48 /* BalsamiqFileManager.cpp */; };
 		273DFFA31696BE4C0049FC48 /* CCBalsamiqLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 273DFF9E1696BE4B0049FC48 /* CCBalsamiqLayer.cpp */; };
 		273DFFA51696C0B70049FC48 /* alert-loading.bmml in Resources */ = {isa = PBXBuildFile; fileRef = 273DFFA41696C0B70049FC48 /* alert-loading.bmml */; };
+		2754F0A9169C1B260054D11A /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2754F0A8169C1B250054D11A /* libiconv.dylib */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		BF1373EF128A898400D9F789 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492D4B1289302400A09262 /* OpenGLES.framework */; };
 		BF1373F0128A899500D9F789 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492C21128924A800A09262 /* libxml2.dylib */; };
@@ -57,6 +60,9 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* BalsamiqXmlReader-x.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BalsamiqXmlReader-x.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		273D00891697C4790049FC48 /* BalsamiqBmmlData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BalsamiqBmmlData.cpp; sourceTree = "<group>"; };
+		273D008A1697C4790049FC48 /* BalsamiqBmmlData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalsamiqBmmlData.h; sourceTree = "<group>"; };
+		273D00BB16990FB50049FC48 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../gles20/cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		273DFF911696BC930049FC48 /* BalsamiqFileParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BalsamiqFileParser.cpp; sourceTree = "<group>"; };
 		273DFF921696BC930049FC48 /* BalsamiqFileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalsamiqFileParser.h; sourceTree = "<group>"; };
 		273DFF981696BE4B0049FC48 /* BalsamiqControlData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BalsamiqControlData.cpp; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		273DFF9E1696BE4B0049FC48 /* CCBalsamiqLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCBalsamiqLayer.cpp; sourceTree = "<group>"; };
 		273DFF9F1696BE4C0049FC48 /* CCBalsamiqLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBalsamiqLayer.h; sourceTree = "<group>"; };
 		273DFFA41696C0B70049FC48 /* alert-loading.bmml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "alert-loading.bmml"; sourceTree = "<group>"; };
+		2754F0A8169C1B250054D11A /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		781C33B11547F06B00633F88 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		781C33B31547F06B00633F88 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -99,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2754F0A9169C1B260054D11A /* libiconv.dylib in Frameworks */,
 				273DFF881696B9920049FC48 /* libcocos2dx.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -107,6 +115,7 @@
 				BF1373F0128A899500D9F789 /* libxml2.dylib in Frameworks */,
 				BF1373F1128A899E00D9F789 /* libz.dylib in Frameworks */,
 				BF13742F128A8E6A00D9F789 /* QuartzCore.framework in Frameworks */,
+				273D00BC16990FB50049FC48 /* libcurl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +141,8 @@
 		273DFF8D1696BBFC0049FC48 /* LibBalsamiqXmlReader-x */ = {
 			isa = PBXGroup;
 			children = (
+				273D00891697C4790049FC48 /* BalsamiqBmmlData.cpp */,
+				273D008A1697C4790049FC48 /* BalsamiqBmmlData.h */,
 				273DFF981696BE4B0049FC48 /* BalsamiqControlData.cpp */,
 				273DFF991696BE4B0049FC48 /* BalsamiqControlData.h */,
 				273DFF9A1696BE4B0049FC48 /* BalsamiqReaderConfig.cpp */,
@@ -150,6 +161,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				2754F0A8169C1B250054D11A /* libiconv.dylib */,
 				15A3D7AE1682F5EC002FB0C5 /* cocos2dx.xcodeproj */,
 				273DFF8D1696BBFC0049FC48 /* LibBalsamiqXmlReader-x */,
 				BF23D4E2143315EB00657E08 /* Classes */,
@@ -164,6 +176,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				273D00BB16990FB50049FC48 /* libcurl.a */,
 				BF492B6912891AC600A09262 /* libz.dylib */,
 				BF137426128A8E4600D9F789 /* QuartzCore.framework */,
 				BF492D4B1289302400A09262 /* OpenGLES.framework */,
@@ -321,6 +334,7 @@
 				273DFFA11696BE4C0049FC48 /* BalsamiqReaderConfig.cpp in Sources */,
 				273DFFA21696BE4C0049FC48 /* BalsamiqFileManager.cpp in Sources */,
 				273DFFA31696BE4C0049FC48 /* CCBalsamiqLayer.cpp in Sources */,
+				273D008B1697C47A0049FC48 /* BalsamiqBmmlData.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +368,11 @@
 					"\"$(SRCROOT)/../../gles20/cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../gles20/cocos2dx/kazmath/include\"",
 					"$(SRCROOT)/../../gles20/external/chipmunk/include/chipmunk",
+					"\"$(SRCROOT)/../../gles20/cocos2dx/platform/third_party/ios\"",
 				);
 				INFOPLIST_FILE = "BalsamiqXmlReader-x-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../gles20/cocos2dx/platform/third_party/ios/libraries\"";
 				PRODUCT_NAME = "BalsamiqXmlReader-x";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -389,9 +405,11 @@
 					"\"$(SRCROOT)/../../gles20/cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../gles20/cocos2dx/kazmath/include\"",
 					"$(SRCROOT)/../../gles20/external/chipmunk/include/chipmunk",
+					"\"$(SRCROOT)/../../gles20/cocos2dx/platform/third_party/ios\"",
 				);
 				INFOPLIST_FILE = "BalsamiqXmlReader-x-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../gles20/cocos2dx/platform/third_party/ios/libraries\"";
 				PRODUCT_NAME = "BalsamiqXmlReader-x";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
